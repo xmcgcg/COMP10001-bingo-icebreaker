@@ -1,0 +1,7 @@
+.list-item-inner {
+    display: flex;
+}
+
+span {
+    margin: 2px 5px;
+}

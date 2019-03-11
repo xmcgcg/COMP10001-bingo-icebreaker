@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCheckCircle, faTimesCircle, faEdit, faTrashAlt } from '@fortawesome/free-regular-svg-icons';
 import * as serviceWorker from './serviceWorker';
+import NameList from './components/name_list/NameList';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+library.add(faCheckCircle, faTimesCircle, faEdit, faTrashAlt);
+
+ReactDOM.render(<NameList />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
